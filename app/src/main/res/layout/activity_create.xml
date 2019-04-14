@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- top toolbar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/layout_top_tabs"/>
+
+        </RelativeLayout>
+
+        <!-- middle section -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginBottom="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVCreateGame"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Crear nuevo evento: "/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCreate"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:text="Crear evento"
+                android:background="#faed27" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVCreateLine"
+                android:textSize="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="__________________________________"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tVEventosCerca"
+                android:textSize="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Eventos Cerca de ti: "
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEvento1"
+                        android:textSize="17dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Nombre del evento "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEventoPla1"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Plazas disponibles: 2 "/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnUnirme1"
+                        android:layout_marginTop="-57dp"
+                        android:layout_marginLeft="200dp"
+                        android:text="Unirme"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginRight="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEvento2"
+                        android:textSize="17dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Nombre del evento "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEventoPla2"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Plazas disponibles: 5 "/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnUnirme2"
+                        android:layout_marginTop="-57dp"
+                        android:layout_marginLeft="200dp"
+                        android:text="Unirme"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEvento3"
+                        android:textSize="17dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Nombre del evento "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEventoPla3"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Plazas disponibles: 3 "/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnUnirme3"
+                        android:layout_marginTop="-57dp"
+                        android:layout_marginLeft="200dp"
+                        android:text="Unirme"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEvento4"
+                        android:textSize="17dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Nombre del evento "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVEventoPla4"
+                        android:textSize="17dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="Plazas disponibles: 7 "/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnUnirme4"
+                        android:layout_marginTop="-57dp"
+                        android:layout_marginLeft="200dp"
+                        android:text="Unirme"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginRight="20dp"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <!-- bottomNavigationViewBar -->
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

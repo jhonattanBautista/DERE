@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/groupItem"
+        android:title="group"
+        android:icon="@drawable/ic_create_group">
+
+    </item>
+    <item
+        android:id="@+id/gameItem"
+        android:title="game"
+        android:icon="@drawable/ic_game">
+
+    </item>
+    <item
+        android:id="@+id/mapItem"
+        android:title="map"
+        android:icon="@drawable/ic_map">
+
+    </item>
+
+    <item
+        android:id="@+id/lectorItem"
+        android:title="lectorQr"
+        android:icon="@drawable/ic_lectorqr">
+
+    </item>
+
+    <item
+        android:id="@+id/perfilItem"
+        android:title="perfil"
+        android:icon="@drawable/ic_lector">
+
+    </item>
+
+</menu>

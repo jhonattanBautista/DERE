@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:orientation="vertical">
+    
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- top toolbar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/layout_top_tabs"/>
+
+        </RelativeLayout>
+
+        <!-- middle section -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginBottom="50dp"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="237dp"
+                android:text="Cerrar Sesion"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"/>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="199dp"
+                android:layout_height="209dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/perfil2" />
+
+            <TextView
+                android:id="@+id/textViewNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="152dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="70dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esta es tu información: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="230dp"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Universidad:  P.U.J. "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="260dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/textViewFacul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facultad: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="290dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewAlcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consumes alcohol: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="350dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewA4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tu nivel de jugador es: "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="380dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewAnivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medio"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="420dp"
+                android:textSize="58dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:background="#e55137"
+                android:textColor="#FFF"/>
+
+
+        </RelativeLayout>
+
+        <!-- bottomNavigationViewBar -->
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+
+    </RelativeLayout>
+    
+
+
+
+</android.support.design.widget.CoordinatorLayout>

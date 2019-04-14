@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="facultades">
+
+        <item>Arqui-Diseño</item>
+        <item>Artes</item>
+        <item>Ciencias</item>
+        <item>Ciencias Econ. y Admin.</item>
+        <item>Ciencias Jurídicas</item>
+        <item>C. Pol y Rel. Internac</item>
+        <item>Ciencias Sociales</item>
+        <item>Comunicación y Lenguaje</item>
+        <item>Derecho Canónico</item>
+        <item>Educación</item>
+        <item>Enfermería</item>
+        <item>Estud. Ambient. y Rural</item>
+        <item>Filosofía</item>
+        <item>Ingeniería</item>
+        <item>Medicina</item>
+        <item>Odontología</item>
+        <item>Psicología</item>
+        <item>Teología</item>
+
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- top toolbar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/layout_top_tabs"/>
+
+        </RelativeLayout>
+
+        <!-- middle section -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/podio" />
+
+            <TextView
+                android:id="@+id/textViewPodio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jugador con mejor puntaje"
+                android:layout_marginTop="160dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/textViewPodio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Segundo mejor jugador"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/textViewPodio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tercer mejor jugador"
+                android:layout_marginTop="240dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/textViewPodio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jugador en el cuarto puesto "
+                android:layout_marginTop="280dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/textViewPodio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jugador en el quinto puesto"
+                android:layout_marginTop="320dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:id="@+id/textViewPodio6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jugador en el sexto puesto"
+                android:layout_marginTop="320dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFF"/>
+        </RelativeLayout>
+
+        <!-- bottomNavigationViewBar -->
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
